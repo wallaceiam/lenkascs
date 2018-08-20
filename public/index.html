@@ -1,0 +1,837 @@
+<html>
+
+<head>
+    <title>Lenka Wallace, MBA</title>
+
+
+
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm"
+        crossorigin="anonymous">
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.2.0/css/all.css" integrity="sha384-hWVjflwFxL6sNzntih27bfxkr27PmbbK/iSvJ+a4+0owXq79v+lsFkW54bOGbiDQ"
+        crossorigin="anonymous">
+
+    <style>
+        @import url('https://fonts.googleapis.com/css?family=Rubik:300,400,500,600,700');
+        @import url('https://rsms.me/inter/inter-ui.css');
+
+        :root {
+            font-size: 16px;
+        }
+
+        @page {
+            size: A4 portrait;
+            margin: 1.5cm 2cm;
+        }
+
+        html,
+        body {
+            padding: 0;
+            margin: 0;
+        }
+
+        body {
+            font-family: 'Rubik', sans-serif;
+        }
+
+        /* Top Section */
+
+        .header h1 {
+            font-size: 2.625rem;
+            font-stretch: 100%;
+            font-weight: 600;
+            text-transform: uppercase;
+            letter-spacing: 2px;
+        }
+
+        .header h1>span {
+            font-size: 1.3125rem;
+            font-weight: normal;
+        }
+
+        .header h2 {
+            font-size: 1.3125rem;
+            font-weight: 600;
+            color: #008CFF;
+            line-height: 2rem;
+        }
+
+        .header .contact-details {
+            margin-top: 16px;
+            font-size: 0.8125rem;
+        }
+
+        .header .contact-details>div {
+            margin-bottom: 8px;
+        }
+
+        .header .contact-details svg {
+            /* fill: #008CFF; */
+            height: 16px;
+            stroke: #008CFF;
+        }
+
+        .header a {
+            color: #000000;
+        }
+
+        .img-circle {
+            border-radius: 50%;
+        }
+
+        @media print {
+            .header a {
+                color: #000000;
+                text-decoration: none !important;
+            }
+            .header img {
+                margin-right: 0.3cm;
+            }
+            article.language>div {
+                margin-right: 0.25cm;
+            }
+        }
+
+        /* Section */
+
+        section>h1 {
+            font-size: 1.75rem;
+            font-weight: 400;
+            text-transform: uppercase;
+            border-bottom: solid 3px #000000;
+            letter-spacing: 2px;
+        }
+
+        /* Experience */
+
+        article.experience:not(:last-child),
+        article.accomplishment:not(:last-child),
+        article.expertise:not(:last-child),
+        article.language:not(:last-child) {
+            border-bottom: dashed 1px #c3c3c3;
+        }
+
+        article.experience>h1 {
+            font-size: 1.3125rem;
+            margin-bottom: 16px;
+        }
+
+        article.accomplishment h3 {
+            font-size: 1rem;
+            font-weight: 500;
+            margin-bottom: 16px;
+        }
+
+        article.language h1 {
+            font-size: 1rem;
+            font-weight: 600;
+        }
+
+        article.language p {
+            font-size: 0.875rem;
+        }
+
+
+        article.experience>h2 {
+            font-size: 1rem;
+            margin-bottom: 16px;
+            color: #008CFF;
+        }
+
+        article.experience>.details,
+        article.accomplishment .details {
+            font-size: 0.875rem;
+
+        }
+
+        article.experience>.details svg,
+        article.accomplishment .details svg {
+            height: 16px;
+            stroke: #000000;
+        }
+
+        article.experience>p,
+        article.accomplishment p {
+            font-size: 1rem;
+            margin-top: 16px;
+            margin-bottom: 16px;
+        }
+
+        article.experience>ul>li {
+            margin-top: 8px;
+            margin-bottom: 8px;
+        }
+
+        article.experience>ul {
+            font-size: 1rem;
+            padding-left: 20px;
+        }
+
+        /* Sidebar */
+
+        article.accomplishment svg {
+            font-size: 1rem;
+            stroke: #008CFF;
+        }
+
+        article.expertise h2 {
+            font-size: 1rem;
+            font-weight: 600;
+            color: #008CFF;
+        }
+
+        .progress {
+            height: 5px;
+            background: #c3c3c3;
+            border-radius: 0;
+            box-shadow: none;
+            margin-bottom: 24px;
+            overflow: visible;
+            position: relative;
+        }
+
+        .progress .progress-bar {
+            position: relative;
+            -webkit-animation: animate-positive 2s;
+            animation: animate-positive 2s;
+            background-color: #000000;
+        }
+
+        .progress .progress-bar:after {
+            content: "\f111";
+            font-family: "Font Awesome 5 Free";
+            font-weight: 900;
+            position: absolute;
+            top: -11px;
+            right: -7px;
+            font-size: 16px;
+            font-weight: 700;
+            color: #008CFF;
+        }
+
+        article.language {
+            margin-top: 16px;
+            margin-bottom: 16px;
+        }
+
+        article.language .fas {
+            margin-right: 4px;
+        }
+
+        article.language .fas.fa-circle.fill {
+            color: #008CFF;
+        }
+
+        article.tech h1 {
+            font-size: 1.25rem;
+            color: #008CFF;
+
+        }
+
+        article.tech .badge-outline {
+            background: transparent;
+            border: 1px solid #c3c3c3;
+            border-radius: 2px;
+            padding: 8px 8px;
+            margin: 4px 4px;
+        }
+
+        @-webkit-keyframes animate-positive {
+            0% {
+                width: 0%;
+            }
+        }
+
+        @keyframes animate-positive {
+            0% {
+                width: 0%;
+            }
+        }
+
+        /* margins & spacing */
+
+        .header {
+            margin-top: 32px;
+            margin-bottom: 32px;
+        }
+
+        article.experience {
+            margin-top: 24px;
+            margin-bottom: 24px;
+            page-break-inside: avoid;
+        }
+
+        .side-bar section {
+            page-break-inside: avoid;
+        }
+
+        .side-bar section:not(:first-child) {
+            margin-top: 64px;
+        }
+
+        .side-bar section article.accomplishment {
+            margin-top: 24px;
+            margin-bottom: 24px;
+        }
+
+        .side-bar section article.expertise {
+            margin-top: 32px;
+            margin-bottom: 0px;
+        }
+    </style>
+
+</head>
+
+<body>
+    <div class="header">
+        <div class="container">
+            <div class="row justify-content-start">
+                <div class="col-8">
+                    <h1>Lenka Wallace
+                        <span>MBA</span>
+                    </h1>
+                    <h2>Ten years of experience in Project Management within Prince2, P3M and Agile environments</h2>
+                    <div class="row contact-details">
+                        <div class="col-4">
+                            <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"
+                                stroke-linecap="round" stroke-linejoin="round" class="feather feather-phone">
+                                <path d="M22 16.92v3a2 2 0 0 1-2.18 2 19.79 19.79 0 0 1-8.63-3.07 19.5 19.5 0 0 1-6-6 19.79 19.79 0 0 1-3.07-8.67A2 2 0 0 1 4.11 2h3a2 2 0 0 1 2 1.72 12.84 12.84 0 0 0 .7 2.81 2 2 0 0 1-.45 2.11L8.09 9.91a16 16 0 0 0 6 6l1.27-1.27a2 2 0 0 1 2.11-.45 12.84 12.84 0 0 0 2.81.7A2 2 0 0 1 22 16.92z"></path>
+                            </svg>
+                            <a href="tel: 004407563146866">+44 (0) 75 6314 6866</a>
+                        </div>
+                        <div class="col-6">
+                            <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"
+                                stroke-linecap="round" stroke-linejoin="round" class="feather feather-at-sign">
+                                <circle cx="12" cy="12" r="4"></circle>
+                                <path d="M16 8v5a3 3 0 0 0 6 0v-1a10 10 0 1 0-3.92 7.94"></path>
+                            </svg>
+                            <a href="mailto: lena.straka.pm@gmail.com">lena.straka.pm@gmail.com</a>
+                        </div>
+                        <div class="col-12">
+                            <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"
+                                stroke-linecap="round" stroke-linejoin="round" class="feather feather-linkedin">
+                                <path d="M16 8a6 6 0 0 1 6 6v7h-4v-7a2 2 0 0 0-2-2 2 2 0 0 0-2 2v7h-4v-7a6 6 0 0 1 6-6z"></path>
+                                <rect x="2" y="9" width="4" height="12"></rect>
+                                <circle cx="4" cy="4" r="2"></circle>
+                            </svg>
+                            <a href="https://www.linkedin.com/in/lenka-wallace-965aa958/">https://www.linkedin.com/in/lenka-wallace-965aa958/</a>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-4">
+                    <img class="img img-fluid img-circle float-right" src="https://media.licdn.com/dms/image/C5603AQFRuTbTzO9Qjg/profile-displayphoto-shrink_200_200/0?e=1540425600&v=beta&t=ISXa9wOErYZX4CfbFSPE4YFCoXEaZq72ZgFhVKVSOJI"
+                    />
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="container">
+        <div class="row justify-content-center">
+            <div class="col-7">
+                <!-- Experience -->
+                <section>
+                    <h1>Experience</h1>
+
+                    <!-- Project Manager / PMO Manager @ RBS -->
+                    <article class="experience">
+                        <h1>Project Manager / PMO Manager</h1>
+                        <h2 class="company">Royal Bank of Scotland</h2>
+                        <div class="row details">
+                            <div class="col-8">
+                                <div class="row">
+                                    <div class="col-6">
+                                        <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"
+                                            stroke-linecap="round" stroke-linejoin="round" class="feather feather-calendar">
+                                            <rect x="3" y="4" width="18" height="18" rx="2" ry="2"></rect>
+                                            <line x1="16" y1="2" x2="16" y2="6"></line>
+                                            <line x1="8" y1="2" x2="8" y2="6"></line>
+                                            <line x1="3" y1="10" x2="21" y2="10"></line>
+                                        </svg> 03/2017 - Present
+                                    </div>
+                                    <div class="col-6">
+                                        <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"
+                                            stroke-linecap="round" stroke-linejoin="round" class="feather feather-map-pin">
+                                            <path d="M21 10c0 7-9 13-9 13s-9-6-9-13a9 9 0 0 1 18 0z"></path>
+                                            <circle cx="12" cy="10" r="3"></circle>
+                                        </svg> London, UK
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <p>
+                            Working within a major programme designed to ring-fence the retail customers from the investment division, in order to help
+                            protect the UK economy from a repeat of the recent Financial Crisis.
+                        </p>
+                        <ul>
+                            <li>Led a team of 2 resources</li>
+                            <li>Set up project governance within a tight time-frame by creating detailed, user-friendly processes
+                                as well as enhancing existing procedures and implementing control measures to ensure accuracy.
+                                Demonstrated ability to build strong and lasting stakeholder relationships.
+                            </li>
+                            <li>Successfully supported dress rehearsal implementations and live event by initiating and driving
+                                schedule of events and liaising with operations, technical and other teams to deliver automated
+                                data migration of customer records. With a strong attention to detail, understood and drove
+                                the process to meet the business objectives and goals. </li>
+                            <li>Identiﬁed the need for and successfully implemented under a tight timeline, a text messaging
+                                facility required for alert messaging over the dress rehearsal implementations to provide
+                                more user-friendly, timely, and cost-eﬀective notiﬁcations to the various teams involved
+                                in delivery. RBS is trailing this facility with other teams and projects. </li>
+                            <li>Managing workstream governance and wider plan in MS Project; tracking and monitoring milestones
+                                and dependencies against the programme goals as well as resource usage and ensure an optimised
+                                allocation based on the project lifecycle. </li>
+                            <li>RAID Management in PlanView including identifying inter/internal/external dependency management
+                                as well as escalating risks and issues promptly and eﬀectively. </li>
+                            <li>Managing change control procedures and supporting assurance and audit activities to ensure adherence
+                                to project compliance. </li>
+                            <li>Following P3M (Portfolio, Programme, Project Management) methodology and Records Management best
+                                practices
+                            </li>
+                        </ul>
+
+                    </article>
+
+                    <!-- Project Manager / Lead PMO @ RBS -->
+                    <article class="experience">
+                        <h1>Project Manager / Lead PMO</h1>
+                        <h2 class="company">Royal Bank of Scotland</h2>
+                        <div class="row details">
+                            <div class="col-8">
+                                <div class="row">
+                                    <div class="col-6">
+                                        <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"
+                                            stroke-linecap="round" stroke-linejoin="round" class="feather feather-calendar">
+                                            <rect x="3" y="4" width="18" height="18" rx="2" ry="2"></rect>
+                                            <line x1="16" y1="2" x2="16" y2="6"></line>
+                                            <line x1="8" y1="2" x2="8" y2="6"></line>
+                                            <line x1="3" y1="10" x2="21" y2="10"></line>
+                                        </svg> 10/2014 - 02/2017
+                                    </div>
+                                    <div class="col-6">
+                                        <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"
+                                            stroke-linecap="round" stroke-linejoin="round" class="feather feather-map-pin">
+                                            <path d="M21 10c0 7-9 13-9 13s-9-6-9-13a9 9 0 0 1 18 0z"></path>
+                                            <circle cx="12" cy="10" r="3"></circle>
+                                        </svg> London, UK
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <p>
+                            Being part of the delivery team with an objective to create an independent Williams & Glyn Bank on the High Street. Working
+                            within event workstream that operates across all the individual delivery workstreams with focus
+                            on business testing and proving.
+                        </p>
+                        <ul>
+                            <li>Led a small group of on- and off-shore resources and reported to the Head of Programme. </li>
+                            <li>Successfully implemented best practices of records management following the P3M methodology (Portfolio,
+                                Programme, Project) under tight timelines with limited resources. Conducted the task to reconcile
+                                over 20 thousand ﬁles identiﬁed since October 2012 in order to achieve programme compliance
+                                and a successful external audit. </li>
+                            <li>Provided programme and project level reporting including: budgeting; change control; records
+                                management and risk management within PlanView; and workstream HR management.
+                            </li>
+                            <li>Liaised and reviewed month end project ﬁnancials with senior Change Manager which included resource
+                                and ﬁnancial forecasts, as well as justiﬁcation for variances between approved budget and
+                                actual plus projected spend. </li>
+                            <li>
+                                Undertook quality assurance on metrics in Planview which include reporting, RAG status, milestones, risks and issues, forecasting
+                                and governance packs throughout the programme and projects to ensure adherence to project
+                                compliance within the International Banking Change.
+
+                            </li>
+                        </ul>
+
+                    </article>
+
+                    <!-- Project Manager  @ FSL -->
+                    <article class="experience">
+                        <h1>Project Manager </h1>
+                        <h2 class="company">Financial Software Limited</h2>
+                        <div class="row details">
+                            <div class="col-8">
+                                <div class="row">
+                                    <div class="col-6">
+                                        <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"
+                                            stroke-linecap="round" stroke-linejoin="round" class="feather feather-calendar">
+                                            <rect x="3" y="4" width="18" height="18" rx="2" ry="2"></rect>
+                                            <line x1="16" y1="2" x2="16" y2="6"></line>
+                                            <line x1="8" y1="2" x2="8" y2="6"></line>
+                                            <line x1="3" y1="10" x2="21" y2="10"></line>
+                                        </svg> 11/2013 - 10/2014
+                                    </div>
+                                    <div class="col-6">
+                                        <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"
+                                            stroke-linecap="round" stroke-linejoin="round" class="feather feather-map-pin">
+                                            <path d="M21 10c0 7-9 13-9 13s-9-6-9-13a9 9 0 0 1 18 0z"></path>
+                                            <circle cx="12" cy="10" r="3"></circle>
+                                        </svg> London, UK
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <p>
+                            Data Migration / Software implementation projects
+                        </p>
+                        <ul>
+                            <li>Responsible for managing data migration and software implementation projects; decision making
+                                - delivery of work in release form
+                            </li>
+                            <li> Planning &amp; Reporting:
+                                <ul>
+                                    <li>Development - planning internal and external development projects, reviewing timescales
+                                        with Dev. Manager</li>
+
+                                    <li>Support - reviewing support overheads with Support Manager</li>
+                                    <li>Business Analysis - planning BA projects, reviewing timescales with BA Manager</li>
+                                    <li>Data - planning data projects, reviewing timescales with Data Manger</li>
+                                    <li>> Customers – planning bespoke projects and reviewing a timeline with them to meet their
+                                        expectation Development of project plans and project progress reports for weekly
+                                        management discussions
+                                    </li>
+                                </ul>
+                                <li>Migration planning with new clients including production of Project Brief, PID, Highlight
+                                    / Checkpoint reports, internal project planning and reporting</li>
+                                <li> Ensure all client project requirements are planned and communicated internally and externally
+                                </li>
+                                <li>Stakeholder management, Risk management, Document management, Risk &amp; Issue Log, Action
+                                    Log, QA Log, etc. </li>
+                                <li>Temporary managed Business Analysts team (team of 6 resources)</li>
+
+                            </li>
+                        </ul>
+
+                    </article>
+                </section>
+            </div>
+            <div class="col-5 side-bar">
+                <!-- Most Proud Of -->
+                <section>
+                    <h1>Most Proud of</h1>
+                    <!-- Speaker at... -->
+                    <article class="accomplishment">
+                        <div class="row">
+                            <div class="col-2">
+                                <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"
+                                    stroke-linecap="round" stroke-linejoin="round" class="feather feather-mic">
+                                    <path d="M12 1a3 3 0 0 0-3 3v8a3 3 0 0 0 6 0V4a3 3 0 0 0-3-3z"></path>
+                                    <path d="M19 10v2a7 7 0 0 1-14 0v-2"></path>
+                                    <line x1="12" y1="19" x2="12" y2="23"></line>
+                                    <line x1="8" y1="23" x2="16" y2="23"></line>
+                                </svg>
+                            </div>
+                            <div class="col-10">
+                                <h3>Speaker at the Project Management Conference</h3>
+                                <div class="row details">
+                                    <div class="col-6">
+                                        <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"
+                                            stroke-linecap="round" stroke-linejoin="round" class="feather feather-calendar">
+                                            <rect x="3" y="4" width="18" height="18" rx="2" ry="2"></rect>
+                                            <line x1="16" y1="2" x2="16" y2="6"></line>
+                                            <line x1="8" y1="2" x2="8" y2="6"></line>
+                                            <line x1="3" y1="10" x2="21" y2="10"></line>
+                                        </svg> 06/2018
+                                    </div>
+                                    <div class="col-6">
+                                        <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"
+                                            stroke-linecap="round" stroke-linejoin="round" class="feather feather-map-pin">
+                                            <path d="M21 10c0 7-9 13-9 13s-9-6-9-13a9 9 0 0 1 18 0z"></path>
+                                            <circle cx="12" cy="10" r="3"></circle>
+                                        </svg>London, UK
+                                    </div>
+
+                                </div>
+                                <p>Presented "Agile PM/PMO in Action" to 100+ audience
+                                </p>
+                            </div>
+                        </div>
+                    </article>
+
+                    <!-- Training & Coaching -->
+                    <article class="accomplishment">
+                        <div class="row">
+                            <div class="col-2">
+                                <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"
+                                    stroke-linecap="round" stroke-linejoin="round" class="feather feather-message-square">
+                                    <path d="M21 15a2 2 0 0 1-2 2H7l-4 4V5a2 2 0 0 1 2-2h14a2 2 0 0 1 2 2z"></path>
+                                </svg>
+                            </div>
+                            <div class="col-10">
+                                <h3>Training &amp; Coaching</h3>
+                                <p>Run group and individual trainings on a new version of PlanView for colleagues within the
+                                    project which improved the visibility of project RAIDs and resulted in more eﬃcient mitigation
+                                    plan
+                                </p>
+                            </div>
+                        </div>
+                    </article>
+
+                    <!-- Record Project Governance -->
+                    <article class="accomplishment">
+                        <div class="row">
+                            <div class="col-2">
+                                <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"
+                                    stroke-linecap="round" stroke-linejoin="round" class="feather feather-star">
+                                    <polygon points="12 2 15.09 8.26 22 9.27 17 14.14 18.18 21.02 12 17.77 5.82 21.02 7 14.14 2 9.27 8.91 8.26 12 2"></polygon>
+                                </svg>
+                            </div>
+                            <div class="col-10">
+                                <h3>Record Project Governance Delivery</h3>
+                                <p>Set up project governance within a tight time-frame successfully and obtained recognition
+                                    from senior stakeholders
+                                </p>
+                            </div>
+                        </div>
+                    </article>
+                </section>
+
+                <!-- Industry Expertise -->
+                <section>
+                    <h1>Industry Expertise
+                    </h1>
+                    <article class="expertise">
+                        <h2>Project Management</h2>
+                        <div class="progress">
+                            <div class="progress-bar" role="progressbar" style="width: 90%" aria-valuenow="25" aria-valuemin="0" aria-valuemax="100"></div>
+                        </div>
+                    </article>
+
+                    <article class="expertise">
+                        <h2>PMO</h2>
+                        <div class="progress">
+                            <div class="progress-bar" role="progressbar" style="width: 90%" aria-valuenow="25" aria-valuemin="0" aria-valuemax="100"></div>
+                        </div>
+                    </article>
+
+                    <article class="expertise">
+                        <h2>Operations</h2>
+                        <div class="progress">
+                            <div class="progress-bar" role="progressbar" style="width: 70%" aria-valuenow="25" aria-valuemin="0" aria-valuemax="100"></div>
+                        </div>
+                    </article>
+
+                    <article class="expertise">
+                        <h2>Leadership</h2>
+                        <div class="progress">
+                            <div class="progress-bar" role="progressbar" style="width: 60%" aria-valuenow="25" aria-valuemin="0" aria-valuemax="100"></div>
+                        </div>
+                    </article>
+
+                    <article class="expertise">
+                        <h2>Project Analysis</h2>
+                        <div class="progress">
+                            <div class="progress-bar" role="progressbar" style="width: 90%" aria-valuenow="25" aria-valuemin="0" aria-valuemax="100"></div>
+                        </div>
+                    </article>
+
+                    <article class="expertise">
+                        <h2>RIAD Management</h2>
+                        <div class="progress">
+                            <div class="progress-bar" role="progressbar" style="width: 90%" aria-valuenow="25" aria-valuemin="0" aria-valuemax="100"></div>
+                        </div>
+                    </article>
+                </section>
+
+                <!-- Education -->
+                <section>
+                    <h1>Education</h1>
+                    <article class="experience">
+                        <h1>MBA - Business Administration</h1>
+                        <h2 class="company">Newport International University</h2>
+                        <div class="row details">
+                            <div class="col-6">
+                                <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"
+                                    stroke-linecap="round" stroke-linejoin="round" class="feather feather-calendar">
+                                    <rect x="3" y="4" width="18" height="18" rx="2" ry="2"></rect>
+                                    <line x1="16" y1="2" x2="16" y2="6"></line>
+                                    <line x1="8" y1="2" x2="8" y2="6"></line>
+                                    <line x1="3" y1="10" x2="21" y2="10"></line>
+                                </svg> 2010 - 2012
+                            </div>
+                            <div class="col-6">
+                                <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"
+                                    stroke-linecap="round" stroke-linejoin="round" class="feather feather-map-pin">
+                                    <path d="M21 10c0 7-9 13-9 13s-9-6-9-13a9 9 0 0 1 18 0z"></path>
+                                    <circle cx="12" cy="10" r="3"></circle>
+                                </svg> USA
+                            </div>
+
+                        </div>
+
+                    </article>
+
+                    <article class="experience">
+                        <h1>BSBA - Business Administration </h1>
+                        <h2 class="company">City University of Seattle</h2>
+                        <div class="row details">
+                            <div class="col-6">
+                                <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"
+                                    stroke-linecap="round" stroke-linejoin="round" class="feather feather-calendar">
+                                    <rect x="3" y="4" width="18" height="18" rx="2" ry="2"></rect>
+                                    <line x1="16" y1="2" x2="16" y2="6"></line>
+                                    <line x1="8" y1="2" x2="8" y2="6"></line>
+                                    <line x1="3" y1="10" x2="21" y2="10"></line>
+                                </svg> 2006 - 2009
+                            </div>
+                            <div class="col-6">
+                                <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"
+                                    stroke-linecap="round" stroke-linejoin="round" class="feather feather-map-pin">
+                                    <path d="M21 10c0 7-9 13-9 13s-9-6-9-13a9 9 0 0 1 18 0z"></path>
+                                    <circle cx="12" cy="10" r="3"></circle>
+                                </svg> USA
+                            </div>
+                        </div>
+
+
+                    </article>
+                </section>
+
+                <!-- Languages -->
+                <section>
+                    <h1>Languages</h1>
+                    <article class="language">
+                        <div class="row">
+                            <div class="col-6">
+                                <h1>English</h1>
+                                <p>Proficient </p>
+                            </div>
+                            <div class="col-6 d-flex justify-content-end">
+                                <i class="fas fa-circle fill"></i>
+                                <i class="fas fa-circle fill"></i>
+                                <i class="fas fa-circle fill"></i>
+                                <i class="fas fa-circle fill"></i>
+                                <i class="fas fa-circle"></i>
+                            </div>
+
+                        </div>
+                    </article>
+                    <article class="language">
+                        <div class="row">
+                            <div class="col-6">
+                                <h1>Slovak</h1>
+                                <p>Native </p>
+                            </div>
+                            <div class="col-6 d-flex justify-content-end">
+                                <i class="fas fa-circle fill"></i>
+                                <i class="fas fa-circle fill"></i>
+                                <i class="fas fa-circle fill"></i>
+                                <i class="fas fa-circle fill"></i>
+                                <i class="fas fa-circle fill"></i>
+                            </div>
+
+                        </div>
+                    </article>
+                    <article class="language">
+                        <div class="row">
+                            <div class="col-6">
+                                <h1>Czech</h1>
+                                <p>Native </p>
+                            </div>
+                            <div class="col-6 d-flex justify-content-end">
+                                <i class="fas fa-circle fill"></i>
+                                <i class="fas fa-circle fill"></i>
+                                <i class="fas fa-circle fill"></i>
+                                <i class="fas fa-circle fill"></i>
+                                <i class="fas fa-circle fill"></i>
+                            </div>
+
+                        </div>
+                    </article>
+                    <article class="language">
+                        <div class="row">
+                            <div class="col-6">
+                                <h1>Russian</h1>
+                                <p>Beginner </p>
+                            </div>
+                            <div class="col-6 d-flex justify-content-end">
+                                <i class="fas fa-circle fill"></i>
+                                <i class="fas fa-circle"></i>
+                                <i class="fas fa-circle"></i>
+                                <i class="fas fa-circle"></i>
+                                <i class="fas fa-circle"></i>
+                            </div>
+
+                        </div>
+                    </article>
+                </section>
+
+                <!-- Passions -->
+                <section>
+                    <h1>Passions</h1>
+                    <!-- Speaker at... -->
+                    <article class="accomplishment">
+                        <div class="row">
+                            <div class="col-2">
+                                <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"
+                                    stroke-linecap="round" stroke-linejoin="round" class="feather feather-edit-3">
+                                    <polygon points="14 2 18 6 7 17 3 17 3 13 14 2"></polygon>
+                                    <line x1="3" y1="22" x2="21" y2="22"></line>
+                                </svg>
+                            </div>
+                            <div class="col-10">
+                                <h3>Modern Calligraphy &amp; Design</h3>
+                            </div>
+                        </div>
+                    </article>
+
+                    <!-- Training & Coaching -->
+                    <article class="accomplishment">
+                        <div class="row">
+                            <div class="col-2">
+                                <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"
+                                    stroke-linecap="round" stroke-linejoin="round" class="feather feather-globe">
+                                    <circle cx="12" cy="12" r="10"></circle>
+                                    <line x1="2" y1="12" x2="22" y2="12"></line>
+                                    <path d="M12 2a15.3 15.3 0 0 1 4 10 15.3 15.3 0 0 1-4 10 15.3 15.3 0 0 1-4-10 15.3 15.3 0 0 1 4-10z"></path>
+                                </svg>
+                            </div>
+                            <div class="col-10">
+                                <h3>Travelling and exploring new cultures with family &amp; friends
+                                </h3>
+                            </div>
+                        </div>
+                    </article>
+
+                    <!-- Record Project Governance -->
+                    <article class="accomplishment">
+                        <div class="row">
+                            <div class="col-2">
+                                <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"
+                                    stroke-linecap="round" stroke-linejoin="round" class="feather feather-book">
+                                    <path d="M4 19.5A2.5 2.5 0 0 1 6.5 17H20"></path>
+                                    <path d="M6.5 2H20v20H6.5A2.5 2.5 0 0 1 4 19.5v-15A2.5 2.5 0 0 1 6.5 2z"></path>
+                                </svg>
+                            </div>
+                            <div class="col-10">
+                                <h3>Reading detective and fantasy fiction as well as journals and magazines about start ups and
+                                    enterprauners
+                                </h3>
+                            </div>
+                        </div>
+                    </article>
+                </section>
+
+                <!-- Technologies -->
+                <section>
+                    <h1>Technologies</h1>
+                    <article class="tech">
+                        <h1>Tech Toolkit</h1>
+
+                        <span class="badge badge-pill badge-light badge-outline">MS Office</span>
+                        <span class="badge badge-pill badge-light badge-outline">MS Project</span>
+                        <span class="badge badge-pill badge-light badge-outline">MS Visio</span>
+                        <span class="badge badge-pill badge-light badge-outline">PlanView</span>
+                        <span class="badge badge-pill badge-light badge-outline">Sharepoint</span>
+                        <span class="badge badge-pill badge-light badge-outline">MS Outlook</span>
+                        <span class="badge badge-pill badge-light badge-outline">Lotus Notes</span>
+                        <span class="badge badge-pill badge-light badge-outline">SAP (iPower)</span>
+                        <span class="badge badge-pill badge-light badge-outline">Yuma (Texas)</span>
+                        <span class="badge badge-pill badge-light badge-outline">Oracle (Procurement)</span>
+                        <span class="badge badge-pill badge-light badge-outline">Procreate</span>
+
+                    </article>
+                </section>
+            </div>
+        </div>
+    </div>
+</body>
+
+</html>
