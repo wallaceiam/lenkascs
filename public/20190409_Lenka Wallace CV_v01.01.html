@@ -3,10 +3,10 @@
 <head>
     <title>Lenka Wallace, MBA</title>
 
-    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm"
-        crossorigin="anonymous">
-    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.2.0/css/all.css" integrity="sha384-hWVjflwFxL6sNzntih27bfxkr27PmbbK/iSvJ+a4+0owXq79v+lsFkW54bOGbiDQ"
-        crossorigin="anonymous">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css"
+        integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.2.0/css/all.css"
+        integrity="sha384-hWVjflwFxL6sNzntih27bfxkr27PmbbK/iSvJ+a4+0owXq79v+lsFkW54bOGbiDQ" crossorigin="anonymous">
 
     <style>
         @import url('https://fonts.googleapis.com/css?family=Rubik:300,400,500,600,700');
@@ -18,7 +18,7 @@
 
         @page {
             size: A4 portrait;
-            margin: 1.5cm 2cm;
+            margin: 1.50cm 1.80cm;
         }
 
         html,
@@ -53,6 +53,13 @@
             line-height: 2rem;
         }
 
+        .header h3 {
+            font-size: 14px;
+            font-weight: 400;
+            color: rgb(0, 0, 0);
+            line-height: 1.5rem;
+        }
+
         .header .contact-details {
             margin-top: 16px;
             font-size: 0.8125rem;
@@ -76,18 +83,21 @@
             border-radius: 50%;
         }
 
+        strong {
+            font-weight: 500;
+        }
+
         @media print {
             .header a {
                 color: #000000;
                 text-decoration: none !important;
             }
+
             .header img {
                 margin-right: 0.3cm;
             }
+
             article.language>div {
-                margin-right: 0.25cm;
-            }
-            article.experience>h1 {
                 margin-right: 0.25cm;
             }
         }
@@ -100,6 +110,7 @@
             text-transform: uppercase;
             border-bottom: solid 3px #000000;
             letter-spacing: 2px;
+            margin-bottom: 8px;
         }
 
         /* Experience */
@@ -113,13 +124,13 @@
 
         article.experience>h1 {
             font-size: 1.3125rem;
-            margin-bottom: 16px;
+            margin-bottom: 12px;
         }
 
         article.accomplishment h3 {
             font-size: 1rem;
             font-weight: 500;
-            margin-bottom: 16px;
+            margin-bottom: 12px;
         }
 
         article.language h1 {
@@ -134,7 +145,7 @@
 
         article.experience>h2 {
             font-size: 1rem;
-            margin-bottom: 16px;
+            margin-bottom: 12px;
             color: #008CFF;
         }
 
@@ -152,14 +163,14 @@
         }
 
         article.education .details {
-            padding-bottom: 32px;
+            padding-bottom: 24px; 
         }
 
         article.experience>p,
         article.accomplishment p {
             font-size: 1rem;
-            margin-top: 16px;
-            margin-bottom: 16px;
+            margin-top: 12px;
+            margin-bottom: 12px;
         }
 
         article.experience>ul>li {
@@ -190,7 +201,7 @@
             background: #c3c3c3;
             border-radius: 0;
             box-shadow: none;
-            margin-bottom: 24px;
+            margin-bottom: 12px;
             overflow: visible;
             position: relative;
         }
@@ -215,8 +226,8 @@
         }
 
         article.language {
-            margin-top: 16px;
-            margin-bottom: 16px;
+            margin-top: 10px;
+            margin-bottom: 8px;
         }
 
         article.language .fas {
@@ -260,17 +271,12 @@
             margin-bottom: 32px;
         }
 
-        article.experience {
-            margin-top: 24px;
-            margin-bottom: 24px;
-            page-break-inside: avoid;
-        }
-
         article.reference {
             margin-top: 64px;
         }
 
-        .side-bar section {
+        .side-bar section.avoid-page-break,
+        .avoid-page-break {
             page-break-inside: avoid;
         }
 
@@ -278,14 +284,13 @@
             margin-top: 48px;
         }
 
-        .side-bar section article.accomplishment,
-        .side-bar section article.tech {
-            margin-top: 24px;
-            margin-bottom: 24px;
+        .side-bar section article {
+            margin-top: 8px;
+            margin-bottom: 8px;
         }
 
         .side-bar section article.expertise {
-            margin-top: 32px;
+            margin-top: 8px;
             margin-bottom: 0px;
         }
     </style>
@@ -296,44 +301,59 @@
     <div class="header">
         <div class="container">
             <div class="row justify-content-start">
-                <div class="col-8">
+                <div class="col-12">
                     <h1>Lenka Wallace
                         <span>MBA</span>
                     </h1>
-                    <h2>UX Designer driven to create, improve and deliver user experience by implementing UX processes from research to release.</h2>
+                    <h3>I am a UX Designer with a wealth of transferable skills gained in project management within
+                        Agile and Waterfall environments. I am driven to create, improve and deliver user experience by
+                        implementing UX processes from research to release. I am genuinely interested in human
+                        behaviour. With my infectious enthusiasm, I take a great deal of pride and joy in guiding others
+                        to work together to improve themselves and their community.
+                        When delivering projects, setting up business change processes and planning mainly within
+                        banking and financial sector, I have built strong interpersonal, leadership, organisational and
+                        communication skills.
+                        With a very hands on attitude, I have developed a number of technical skills including wire
+                        framing in Sketch, Marvel or Adobe Xd, prototyping in InVision and Axure and coding in HTML and
+                        CSS.</h3>
                     <div class="row contact-details">
-                        <div class="col-4">
-                            <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"
-                                stroke-linecap="round" stroke-linejoin="round" class="feather feather-phone">
-                                <path d="M22 16.92v3a2 2 0 0 1-2.18 2 19.79 19.79 0 0 1-8.63-3.07 19.5 19.5 0 0 1-6-6 19.79 19.79 0 0 1-3.07-8.67A2 2 0 0 1 4.11 2h3a2 2 0 0 1 2 1.72 12.84 12.84 0 0 0 .7 2.81 2 2 0 0 1-.45 2.11L8.09 9.91a16 16 0 0 0 6 6l1.27-1.27a2 2 0 0 1 2.11-.45 12.84 12.84 0 0 0 2.81.7A2 2 0 0 1 22 16.92z"></path>
+                        <div class="col-3">
+                            <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24"
+                                fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"
+                                stroke-linejoin="round" class="feather feather-phone">
+                                <path
+                                    d="M22 16.92v3a2 2 0 0 1-2.18 2 19.79 19.79 0 0 1-8.63-3.07 19.5 19.5 0 0 1-6-6 19.79 19.79 0 0 1-3.07-8.67A2 2 0 0 1 4.11 2h3a2 2 0 0 1 2 1.72 12.84 12.84 0 0 0 .7 2.81 2 2 0 0 1-.45 2.11L8.09 9.91a16 16 0 0 0 6 6l1.27-1.27a2 2 0 0 1 2.11-.45 12.84 12.84 0 0 0 2.81.7A2 2 0 0 1 22 16.92z">
+                                </path>
                             </svg>
                             <a href="tel: 004407563146866">+44 (0) 75 6314 6866</a>
                         </div>
-                        <div class="col-6">
-                            <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"
-                                stroke-linecap="round" stroke-linejoin="round" class="feather feather-at-sign">
+                        <div class="col-4">
+                            <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24"
+                                fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"
+                                stroke-linejoin="round" class="feather feather-at-sign">
                                 <circle cx="12" cy="12" r="4"></circle>
                                 <path d="M16 8v5a3 3 0 0 0 6 0v-1a10 10 0 1 0-3.92 7.94"></path>
                             </svg>
                             <a href="mailto: lena.straka.pm@gmail.com">lenkawallace.ux@gmail.com</a>
                         </div>
-                        <div class="col-12">
-                            <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"
-                                stroke-linecap="round" stroke-linejoin="round" class="feather feather-linkedin">
-                                <path d="M16 8a6 6 0 0 1 6 6v7h-4v-7a2 2 0 0 0-2-2 2 2 0 0 0-2 2v7h-4v-7a6 6 0 0 1 6-6z"></path>
+                        <div class="col-5">
+                            <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24"
+                                fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"
+                                stroke-linejoin="round" class="feather feather-linkedin">
+                                <path
+                                    d="M16 8a6 6 0 0 1 6 6v7h-4v-7a2 2 0 0 0-2-2 2 2 0 0 0-2 2v7h-4v-7a6 6 0 0 1 6-6z">
+                                </path>
                                 <rect x="2" y="9" width="4" height="12"></rect>
                                 <circle cx="4" cy="4" r="2"></circle>
                             </svg>
-                            <a href="https://www.linkedin.com/in/lenka-wallace-965aa958/">https://www.linkedin.com/in/lenka-wallace-965aa958/</a>
+                            <a
+                                href="https://www.linkedin.com/in/lenka-wallace-965aa958/">https://www.linkedin.com/in/lenka-wallace-965aa958/</a>
                         </div>
                     </div>
                 </div>
-                <div class="col-4">
-                    <img class="img img-fluid img-circle float-right" src="https://media.licdn.com/dms/image/C5603AQFRuTbTzO9Qjg/profile-displayphoto-shrink_200_200/0?e=1540425600&v=beta&t=ISXa9wOErYZX4CfbFSPE4YFCoXEaZq72ZgFhVKVSOJI"
-                    />
-                </div>
             </div>
         </div>
+    </div>
     </div>
     <div class="container">
         <div class="row justify-content-center">
@@ -342,27 +362,31 @@
                 <section>
                     <h1>Experience</h1>
 
-                    
 
-                    <!-- Freelance UX Designer -->
+
+                    <!-- UX Designer -->
                     <article class="experience">
-                        <h1>Freelance UX Designer</h1>
+                        <h1>UX Designer / Consultant</h1>
                         <h2 class="company">L's Concept Ltd</h2>
                         <div class="row details">
                             <div class="col-8">
                                 <div class="row">
                                     <div class="col-6">
-                                        <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"
-                                            stroke-linecap="round" stroke-linejoin="round" class="feather feather-calendar">
+                                        <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24"
+                                            viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"
+                                            stroke-linecap="round" stroke-linejoin="round"
+                                            class="feather feather-calendar">
                                             <rect x="3" y="4" width="18" height="18" rx="2" ry="2"></rect>
                                             <line x1="16" y1="2" x2="16" y2="6"></line>
                                             <line x1="8" y1="2" x2="8" y2="6"></line>
                                             <line x1="3" y1="10" x2="21" y2="10"></line>
-                                        </svg> 11/2018 - Present
+                                        </svg> 04/2018 - Present
                                     </div>
                                     <div class="col-6">
-                                        <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"
-                                            stroke-linecap="round" stroke-linejoin="round" class="feather feather-map-pin">
+                                        <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24"
+                                            viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"
+                                            stroke-linecap="round" stroke-linejoin="round"
+                                            class="feather feather-map-pin">
                                             <path d="M21 10c0 7-9 13-9 13s-9-6-9-13a9 9 0 0 1 18 0z"></path>
                                             <circle cx="12" cy="10" r="3"></circle>
                                         </svg> London, UK
@@ -371,20 +395,40 @@
                             </div>
                         </div>
                         <p>
-                            Helping small to medium sized companies to create, improve and deliver user experience of their website and mobile platforms that effortlessly let their customers to accomplish their goals.
+                            Helping small to medium sized companies to create, improve and deliver user experience of
+                            their website and mobile platforms that effortlessly let their customers to accomplish their
+                            goals.
                         </p>
                         <ul>
-                            <li>Responsible for delivery of impactful designs from research to release using UX process. </li>
-                            <li>Conducting effective interviews and surveys to identify real human needs, and leverage those insights to guide through the design and testing processes. </li>
-                            <li>Creating mid to high fidelity prototypes using sketch, and making them interactive with inVision.</li>
-                            <li>Understanding how to work with clients, manage expectations and set up workflows that deliver the results clients are looking for.</li>
-                            <li>Incorporating a range of industry research methods and approaches to understand and validate the expectations of users.</li>
-                            <li>Creating efficient channel between developers and designers by using appropriate Information Architecture and clear communication.</li>
-                            <li>Using various user testing methods to help inform the optimization of the designs to create more effective experiences.</li>
+                            <li> Key Client's Projects - UX Design:
+                                <ul>
+                                    <li><strong>Levell</strong> - Native Mobile App</li>
+                                    <li><strong>Generation Change</strong> - Responsive Design for Desktop & Mobile</li>
+                                    <li><strong>Bloomsbury Beginnings</strong> - Mobile Web App</li>
+                                    <li><strong>GF Travel</strong> - Native Mobile App </li>
+                                    <li><strong>Foodie.st</strong> - Website Design</li>
+                                </ul>
+                            <li>Responsible for delivery of impactful designs from research to release using UX process.
+                            </li>
+                            <li>Conducting effective interviews and surveys to identify real human needs, and leverage
+                                those insights to guide through the design and testing processes. </li>
+                            <li>Developing personas, user scenarios, customer journeys and storyboards.</li>
+                            <li>Creating mid to high fidelity prototypes using sketch, and making them interactive with
+                                inVision.</li>
+                            <li>Understanding how to work with clients, manage expectations and set up workflows that
+                                deliver the results clients are looking for.</li>
+                            <li>Incorporating a range of industry research methods and approaches to understand and
+                                validate the expectations of users.</li>
+                            <li>Creating efficient channel between developers and designers by using appropriate
+                                Information Architecture and clear communication.</li>
+                            <li>Using various user testing methods to help inform the optimization of the designs to
+                                create more effective experiences.</li>
+                            </li>
+
                         </ul>
 
                     </article>
-                    
+
                     <!-- Project Manager / PMO Manager @ RBS -->
                     <article class="experience">
                         <h1>Project Manager / PMO Manager</h1>
@@ -393,17 +437,21 @@
                             <div class="col-8">
                                 <div class="row">
                                     <div class="col-6">
-                                        <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"
-                                            stroke-linecap="round" stroke-linejoin="round" class="feather feather-calendar">
+                                        <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24"
+                                            viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"
+                                            stroke-linecap="round" stroke-linejoin="round"
+                                            class="feather feather-calendar">
                                             <rect x="3" y="4" width="18" height="18" rx="2" ry="2"></rect>
                                             <line x1="16" y1="2" x2="16" y2="6"></line>
                                             <line x1="8" y1="2" x2="8" y2="6"></line>
                                             <line x1="3" y1="10" x2="21" y2="10"></line>
-                                        </svg> 03/2017 - Present
+                                        </svg> 03/2017 - 11/2018
                                     </div>
                                     <div class="col-6">
-                                        <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"
-                                            stroke-linecap="round" stroke-linejoin="round" class="feather feather-map-pin">
+                                        <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24"
+                                            viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"
+                                            stroke-linecap="round" stroke-linejoin="round"
+                                            class="feather feather-map-pin">
                                             <path d="M21 10c0 7-9 13-9 13s-9-6-9-13a9 9 0 0 1 18 0z"></path>
                                             <circle cx="12" cy="10" r="3"></circle>
                                         </svg> London, UK
@@ -412,33 +460,32 @@
                             </div>
                         </div>
                         <p>
-                            Regulatory programme - To ring-fence the retail customers from the investment division to protect the UK economy from a repeat
+                            Regulatory programme - To ring-fence the retail customers from the investment division to
+                            protect the UK economy from a repeat
                             of the Financial Crisis.
                         </p>
                         <ul>
-                            <li>Led a team of 2 resources</li>
-                            <li>Set up project governance within a tight time-frame by creating detailed, user-friendly processes
-                                as well as enhancing existing procedures and implementing control measures to ensure accuracy.
-                                Demonstrated ability to build strong and lasting stakeholder relationships.
-                            </li>
-                            <li>Successfully supported dress rehearsal implementations and live event by initiating and driving
-                                schedule of events and liaising with operations, technical and other teams to deliver automated
-                                data migration of customer records. With a strong attention to detail, understood and drove
-                                the process to meet the business objectives and goals. </li>
-                            <li>Identiﬁed the need for and successfully implemented under a tight timeline, a text messaging
-                                facility required for alert messaging over the dress rehearsal implementations to provide
+                            <li>Identiﬁed the need for and successfully implemented under a tight timeline, a text
+                                messaging
+                                facility required for alert messaging over the dress rehearsal implementations to
+                                provide
                                 more user-friendly, timely, and cost-eﬀective notiﬁcations to the various teams involved
                                 in delivery. RBS is trailing this facility with other teams and projects. </li>
-                            <li>Managing workstream governance and wider plan in MS Project; tracking and monitoring milestones
-                                and dependencies against the programme goals as well as resource usage and ensure an optimised
-                                allocation based on the project lifecycle. </li>
-                            <li>RAID Management in PlanView including identifying inter/internal/external dependency management
-                                as well as escalating risks and issues promptly and eﬀectively. </li>
-                            <li>Managing change control procedures and supporting assurance and audit activities to ensure adherence
-                                to project compliance. </li>
-                            <li>Following P3M (Portfolio, Programme, Project Management) methodology and Records Management best
-                                practices.
-                            </li>
+                            <li>Successfully supported dress rehearsal implementations and live event by initiating and
+                                driving
+                                schedule of events and liaising with operations, technical and other teams to deliver
+                                automated
+                                data migration of customer records. </li>
+                            <li>Led a team of 2 resources and set up project governance within a tight time-frame by
+                                creating detailed, user-friendly processes
+                                as well as enhancing existing procedures and implementing control measures to ensure
+                                accuracy.
+                                Demonstrated ability to build strong and lasting stakeholder relationships.</li>
+                            <li>Managing workstream governance and wider plan in MS Project; tracking and monitoring
+                                milestones
+                                and dependencies (inter/internal/external) against the programme goals. Ensured an
+                                optimised allocation of resources based on the project lifecycle. RAID Management in
+                                PlanView. </li>
                         </ul>
 
                     </article>
@@ -451,8 +498,10 @@
                             <div class="col-8">
                                 <div class="row">
                                     <div class="col-6">
-                                        <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"
-                                            stroke-linecap="round" stroke-linejoin="round" class="feather feather-calendar">
+                                        <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24"
+                                            viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"
+                                            stroke-linecap="round" stroke-linejoin="round"
+                                            class="feather feather-calendar">
                                             <rect x="3" y="4" width="18" height="18" rx="2" ry="2"></rect>
                                             <line x1="16" y1="2" x2="16" y2="6"></line>
                                             <line x1="8" y1="2" x2="8" y2="6"></line>
@@ -460,8 +509,10 @@
                                         </svg> 10/2014 - 02/2017
                                     </div>
                                     <div class="col-6">
-                                        <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"
-                                            stroke-linecap="round" stroke-linejoin="round" class="feather feather-map-pin">
+                                        <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24"
+                                            viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"
+                                            stroke-linecap="round" stroke-linejoin="round"
+                                            class="feather feather-map-pin">
                                             <path d="M21 10c0 7-9 13-9 13s-9-6-9-13a9 9 0 0 1 18 0z"></path>
                                             <circle cx="12" cy="10" r="3"></circle>
                                         </svg> London, UK
@@ -470,27 +521,11 @@
                             </div>
                         </div>
                         <p>
-                            Business Transformation programme - To create an independent Williams &amp; Glyn Bank on the High Street. Part of delivery
+                            Business Transformation programme - To create an independent Williams &amp; Glyn Bank on the
+                            High Street. Part of delivery
                             team with focus on business testing and proving.
                         </p>
                         <ul>
-                            <li>Led a small group of on- and off-shore resources and reported to the Head of Programme. </li>
-                            <li>Successfully implemented best practices of records management following the P3M methodology (Portfolio,
-                                Programme, Project) under tight timelines with limited resources. Conducted the task to reconcile
-                                over 20 thousand ﬁles identiﬁed since October 2012 in order to achieve programme compliance
-                                and a successful external audit. </li>
-                            <li>Provided programme and project level reporting including: budgeting; change control; records
-                                management and risk management within PlanView; and workstream HR management.
-                            </li>
-                            <li>Liaised and reviewed month end project ﬁnancials with senior Change Manager which included resource
-                                and ﬁnancial forecasts, as well as justiﬁcation for variances between approved budget and
-                                actual plus projected spend. </li>
-                            <li>
-                                Undertook quality assurance on metrics in Planview which include reporting, RAG status, milestones, risks and issues, forecasting
-                                and governance packs throughout the programme and projects to ensure adherence to project
-                                compliance within the International Banking Change.
-
-                            </li>
                         </ul>
 
                     </article>
@@ -503,8 +538,10 @@
                             <div class="col-8">
                                 <div class="row">
                                     <div class="col-6">
-                                        <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"
-                                            stroke-linecap="round" stroke-linejoin="round" class="feather feather-calendar">
+                                        <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24"
+                                            viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"
+                                            stroke-linecap="round" stroke-linejoin="round"
+                                            class="feather feather-calendar">
                                             <rect x="3" y="4" width="18" height="18" rx="2" ry="2"></rect>
                                             <line x1="16" y1="2" x2="16" y2="6"></line>
                                             <line x1="8" y1="2" x2="8" y2="6"></line>
@@ -512,8 +549,10 @@
                                         </svg> 11/2013 - 10/2014
                                     </div>
                                     <div class="col-6">
-                                        <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"
-                                            stroke-linecap="round" stroke-linejoin="round" class="feather feather-map-pin">
+                                        <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24"
+                                            viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"
+                                            stroke-linecap="round" stroke-linejoin="round"
+                                            class="feather feather-map-pin">
                                             <path d="M21 10c0 7-9 13-9 13s-9-6-9-13a9 9 0 0 1 18 0z"></path>
                                             <circle cx="12" cy="10" r="3"></circle>
                                         </svg> London, UK
@@ -525,30 +564,7 @@
                             Data Migration / Software implementation projects
                         </p>
                         <ul>
-                            <li>Responsible for managing data migration and software implementation projects; decision making
-                                - delivery of work in release form
-                            </li>
-                            <li> Planning &amp; Reporting:
-                                <ul>
-                                    <li>Development - planned internal and external development projects, reviewed timescales
-                                        with Dev. Manager</li>
-                                    <li>Support - reviewedg support overheads with Support Manager</li>
-                                    <li>Business Analysis - planned BA projects, reviewed timescales with BA Manager</li>
-                                    <li>Data - planned data projects, reviewed timescales with Data Manger</li>
-                                    <li>Customers – planned bespoke projects and reviewed a timeline with them to meet their
-                                        expectation
-                                        <li>Development of project plans and project progress reports for weekly management discussions
-                                        </li>
-                                </ul>
-                                <li>Migration planning with new clients including production of Project Brief, PID, Highlight
-                                    / Checkpoint reports, internal project planning and reporting</li>
-                                <li> Ensured all client project requirements are planned and communicated internally and externally</li>
-                                <li>Stakeholder management, RAID management, Records management </li>
-                                <li>Temporary managed Business Analysts team (team of 6 resources)</li>
-
-                                </li>
                         </ul>
-
                     </article>
 
                     <!-- Project Manager @ Lloyd's -->
@@ -559,8 +575,10 @@
                             <div class="col-8">
                                 <div class="row">
                                     <div class="col-6">
-                                        <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"
-                                            stroke-linecap="round" stroke-linejoin="round" class="feather feather-calendar">
+                                        <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24"
+                                            viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"
+                                            stroke-linecap="round" stroke-linejoin="round"
+                                            class="feather feather-calendar">
                                             <rect x="3" y="4" width="18" height="18" rx="2" ry="2"></rect>
                                             <line x1="16" y1="2" x2="16" y2="6"></line>
                                             <line x1="8" y1="2" x2="8" y2="6"></line>
@@ -568,8 +586,10 @@
                                         </svg> 06/2013 - 10/2013
                                     </div>
                                     <div class="col-6">
-                                        <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"
-                                            stroke-linecap="round" stroke-linejoin="round" class="feather feather-map-pin">
+                                        <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24"
+                                            viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"
+                                            stroke-linecap="round" stroke-linejoin="round"
+                                            class="feather feather-map-pin">
                                             <path d="M21 10c0 7-9 13-9 13s-9-6-9-13a9 9 0 0 1 18 0z"></path>
                                             <circle cx="12" cy="10" r="3"></circle>
                                         </svg> London, UK
@@ -581,9 +601,7 @@
                             Business Change Programme (Verde Programme)
                         </p>
                         <ul>
-                
                         </ul>
-
                     </article>
 
                     <!-- Junior Project Manager @ RBS -->
@@ -594,8 +612,10 @@
                             <div class="col-8">
                                 <div class="row">
                                     <div class="col-6">
-                                        <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"
-                                            stroke-linecap="round" stroke-linejoin="round" class="feather feather-calendar">
+                                        <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24"
+                                            viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"
+                                            stroke-linecap="round" stroke-linejoin="round"
+                                            class="feather feather-calendar">
                                             <rect x="3" y="4" width="18" height="18" rx="2" ry="2"></rect>
                                             <line x1="16" y1="2" x2="16" y2="6"></line>
                                             <line x1="8" y1="2" x2="8" y2="6"></line>
@@ -603,8 +623,10 @@
                                         </svg> 09/2012 - 06/2013
                                     </div>
                                     <div class="col-6">
-                                        <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"
-                                            stroke-linecap="round" stroke-linejoin="round" class="feather feather-map-pin">
+                                        <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24"
+                                            viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"
+                                            stroke-linecap="round" stroke-linejoin="round"
+                                            class="feather feather-map-pin">
                                             <path d="M21 10c0 7-9 13-9 13s-9-6-9-13a9 9 0 0 1 18 0z"></path>
                                             <circle cx="12" cy="10" r="3"></circle>
                                         </svg> London, UK
@@ -613,7 +635,7 @@
                             </div>
                         </div>
                         <p>
-                            A Major Deal Compliance / Business Change Programme (Rainbow programme)
+                            Deal Compliance / Business Change Programme (Rainbow programme)
                         </p>
                         <!-- <ul>
                             <li>Responsible for Project Assurance, Analysis, Business Statistics and Reporting
@@ -635,7 +657,6 @@
                             </li>
 
                         </ul> -->
-
                     </article>
 
                     <!-- Project Support Lead @ Amazon -->
@@ -646,8 +667,10 @@
                             <div class="col-8">
                                 <div class="row">
                                     <div class="col-6">
-                                        <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"
-                                            stroke-linecap="round" stroke-linejoin="round" class="feather feather-calendar">
+                                        <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24"
+                                            viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"
+                                            stroke-linecap="round" stroke-linejoin="round"
+                                            class="feather feather-calendar">
                                             <rect x="3" y="4" width="18" height="18" rx="2" ry="2"></rect>
                                             <line x1="16" y1="2" x2="16" y2="6"></line>
                                             <line x1="8" y1="2" x2="8" y2="6"></line>
@@ -655,8 +678,10 @@
                                         </svg> 07/2011 - 07/2012
                                     </div>
                                     <div class="col-6">
-                                        <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"
-                                            stroke-linecap="round" stroke-linejoin="round" class="feather feather-map-pin">
+                                        <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24"
+                                            viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"
+                                            stroke-linecap="round" stroke-linejoin="round"
+                                            class="feather feather-map-pin">
                                             <path d="M21 10c0 7-9 13-9 13s-9-6-9-13a9 9 0 0 1 18 0z"></path>
                                             <circle cx="12" cy="10" r="3"></circle>
                                         </svg> Slovakia, Ireland
@@ -690,7 +715,6 @@
                                 Programme and Project Managers</li>
 
                         </ul> -->
-
                     </article>
 
                     <!-- Project Quality Assurance @ Ministry of Home Affairs (Home Office) -->
@@ -701,8 +725,10 @@
                             <div class="col-8">
                                 <div class="row">
                                     <div class="col-6">
-                                        <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"
-                                            stroke-linecap="round" stroke-linejoin="round" class="feather feather-calendar">
+                                        <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24"
+                                            viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"
+                                            stroke-linecap="round" stroke-linejoin="round"
+                                            class="feather feather-calendar">
                                             <rect x="3" y="4" width="18" height="18" rx="2" ry="2"></rect>
                                             <line x1="16" y1="2" x2="16" y2="6"></line>
                                             <line x1="8" y1="2" x2="8" y2="6"></line>
@@ -710,8 +736,10 @@
                                         </svg> 09/2009 - 06/2011
                                     </div>
                                     <div class="col-6">
-                                        <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"
-                                            stroke-linecap="round" stroke-linejoin="round" class="feather feather-map-pin">
+                                        <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24"
+                                            viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"
+                                            stroke-linecap="round" stroke-linejoin="round"
+                                            class="feather feather-map-pin">
                                             <path d="M21 10c0 7-9 13-9 13s-9-6-9-13a9 9 0 0 1 18 0z"></path>
                                             <circle cx="12" cy="10" r="3"></circle>
                                         </svg> Slovakia
@@ -739,7 +767,6 @@
                                 on projects
                             </li>
                         </ul> -->
-
                     </article>
 
                     <section>
@@ -758,8 +785,9 @@
                     <article class="accomplishment">
                         <div class="row">
                             <div class="col-1">
-                                <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"
-                                    stroke-linecap="round" stroke-linejoin="round" class="feather feather-mic">
+                                <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24"
+                                    fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"
+                                    stroke-linejoin="round" class="feather feather-mic">
                                     <path d="M12 1a3 3 0 0 0-3 3v8a3 3 0 0 0 6 0V4a3 3 0 0 0-3-3z"></path>
                                     <path d="M19 10v2a7 7 0 0 1-14 0v-2"></path>
                                     <line x1="12" y1="19" x2="12" y2="23"></line>
@@ -770,8 +798,10 @@
                                 <h3>Speaker at the Project Management Conference</h3>
                                 <div class="row details">
                                     <div class="col-6">
-                                        <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"
-                                            stroke-linecap="round" stroke-linejoin="round" class="feather feather-calendar">
+                                        <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24"
+                                            viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"
+                                            stroke-linecap="round" stroke-linejoin="round"
+                                            class="feather feather-calendar">
                                             <rect x="3" y="4" width="18" height="18" rx="2" ry="2"></rect>
                                             <line x1="16" y1="2" x2="16" y2="6"></line>
                                             <line x1="8" y1="2" x2="8" y2="6"></line>
@@ -779,8 +809,10 @@
                                         </svg> 06/2018
                                     </div>
                                     <div class="col-6">
-                                        <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"
-                                            stroke-linecap="round" stroke-linejoin="round" class="feather feather-map-pin">
+                                        <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24"
+                                            viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"
+                                            stroke-linecap="round" stroke-linejoin="round"
+                                            class="feather feather-map-pin">
                                             <path d="M21 10c0 7-9 13-9 13s-9-6-9-13a9 9 0 0 1 18 0z"></path>
                                             <circle cx="12" cy="10" r="3"></circle>
                                         </svg>London, UK
@@ -797,16 +829,17 @@
                     <article class="accomplishment">
                         <div class="row">
                             <div class="col-1">
-                                <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"
-                                    stroke-linecap="round" stroke-linejoin="round" class="feather feather-message-square">
+                                <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24"
+                                    fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"
+                                    stroke-linejoin="round" class="feather feather-message-square">
                                     <path d="M21 15a2 2 0 0 1-2 2H7l-4 4V5a2 2 0 0 1 2-2h14a2 2 0 0 1 2 2z"></path>
                                 </svg>
                             </div>
                             <div class="col-11">
                                 <h3>Training &amp; Coaching</h3>
-                                <p>Run group and individual trainings on a new version of PlanView for colleagues within the
-                                    project which improved the visibility of project RAIDs and resulted in more eﬃcient mitigation
-                                    plan
+                                <p>Run group and individual trainings on a new version of PlanView for the project team
+                                    which improved the visibility of project RAIDs and resulted in more eﬃcient
+                                    mitigation plan.
                                 </p>
                             </div>
                         </div>
@@ -816,14 +849,19 @@
                     <article class="accomplishment">
                         <div class="row">
                             <div class="col-1">
-                                <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"
-                                    stroke-linecap="round" stroke-linejoin="round" class="feather feather-star">
-                                    <polygon points="12 2 15.09 8.26 22 9.27 17 14.14 18.18 21.02 12 17.77 5.82 21.02 7 14.14 2 9.27 8.91 8.26 12 2"></polygon>
+                                <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24"
+                                    fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"
+                                    stroke-linejoin="round" class="feather feather-star">
+                                    <polygon
+                                        points="12 2 15.09 8.26 22 9.27 17 14.14 18.18 21.02 12 17.77 5.82 21.02 7 14.14 2 9.27 8.91 8.26 12 2">
+                                    </polygon>
                                 </svg>
                             </div>
                             <div class="col-11">
-                                <h3>Career Change</h3>
-                                <p>Being able to challenge myself and learn something brand new to me. Stepping out of my comfort zone and start a very new direction in my life with a great set of transferable skills. More importantly, do what I love. UX. 
+                                <h3>Success in a second career as a UX Designer</h3>
+                                <p>Able to challenge myself and learn something brand new. Stepping out of my comfort
+                                    zone and start a very new direction in my life with a great set of transferable
+                                    skills. More importantly, do what I love. UX.
                                 </p>
                             </div>
                         </div>
@@ -832,68 +870,100 @@
 
                 <!-- Industry Expertise -->
                 <section>
-                    <h1>Industry Expertise
+                    <h1>Top Skills
                     </h1>
                     <article class="expertise">
                         <h2>Work Ethic</h2>
                         <div class="progress">
-                            <div class="progress-bar" role="progressbar" style="width: 100%" aria-valuenow="25" aria-valuemin="0" aria-valuemax="100"></div>
+                            <div class="progress-bar" role="progressbar" style="width: 95%" aria-valuenow="25"
+                                aria-valuemin="0" aria-valuemax="100"></div>
                         </div>
                     </article>
 
                     <article class="expertise">
                         <h2>Project Management</h2>
                         <div class="progress">
-                            <div class="progress-bar" role="progressbar" style="width: 90%" aria-valuenow="25" aria-valuemin="0" aria-valuemax="100"></div>
+                            <div class="progress-bar" role="progressbar" style="width: 90%" aria-valuenow="25"
+                                aria-valuemin="0" aria-valuemax="100"></div>
                         </div>
                     </article>
 
                     <article class="expertise">
                         <h2>UX Design & Creativity</h2>
                         <div class="progress">
-                            <div class="progress-bar" role="progressbar" style="width: 80%" aria-valuenow="25" aria-valuemin="0" aria-valuemax="100"></div>
+                            <div class="progress-bar" role="progressbar" style="width: 80%" aria-valuenow="25"
+                                aria-valuemin="0" aria-valuemax="100"></div>
                         </div>
                     </article>
 
                     <article class="expertise">
                         <h2>Teamwork</h2>
                         <div class="progress">
-                            <div class="progress-bar" role="progressbar" style="width: 80%" aria-valuenow="25" aria-valuemin="0" aria-valuemax="100"></div>
+                            <div class="progress-bar" role="progressbar" style="width: 80%" aria-valuenow="25"
+                                aria-valuemin="0" aria-valuemax="100"></div>
                         </div>
                     </article>
 
                     <article class="expertise">
                         <h2>Problem Solving</h2>
                         <div class="progress">
-                            <div class="progress-bar" role="progressbar" style="width: 75%" aria-valuenow="25" aria-valuemin="0" aria-valuemax="100"></div>
+                            <div class="progress-bar" role="progressbar" style="width: 75%" aria-valuenow="25"
+                                aria-valuemin="0" aria-valuemax="100"></div>
                         </div>
                     </article>
 
                     <article class="expertise">
                         <h2>Stakeholders Management</h2>
                         <div class="progress">
-                            <div class="progress-bar" role="progressbar" style="width: 70%" aria-valuenow="25" aria-valuemin="0" aria-valuemax="100"></div>
+                            <div class="progress-bar" role="progressbar" style="width: 70%" aria-valuenow="25"
+                                aria-valuemin="0" aria-valuemax="100"></div>
                         </div>
                     </article>
 
                     <article class="expertise">
                         <h2>Leadership</h2>
                         <div class="progress">
-                            <div class="progress-bar" role="progressbar" style="width: 60%" aria-valuenow="25" aria-valuemin="0" aria-valuemax="100"></div>
+                            <div class="progress-bar" role="progressbar" style="width: 60%" aria-valuenow="25"
+                                aria-valuemin="0" aria-valuemax="100"></div>
                         </div>
                     </article>
                 </section>
 
-                <!-- Education -->
+                <!-- Technologies -->
                 <section>
+                    <h1>Technologies</h1>
+                    <article class="tech">
+
+                        <span class="badge badge-pill badge-light badge-outline">Sketch</span>
+                        <span class="badge badge-pill badge-light badge-outline">InVision</span>
+                        <span class="badge badge-pill badge-light badge-outline">Adobe Xd</span>
+                        <span class="badge badge-pill badge-light badge-outline">Marvel</span>
+                        <span class="badge badge-pill badge-light badge-outline">HTML5</span>
+                        <span class="badge badge-pill badge-light badge-outline">CSS</span>
+                        <span class="badge badge-pill badge-light badge-outline">MS Project</span>
+                        <span class="badge badge-pill badge-light badge-outline">PlanView</span>
+                        <span class="badge badge-pill badge-light badge-outline">Sharepoint</span>
+                        <span class="badge badge-pill badge-light badge-outline">MS Office</span>
+                        <span class="badge badge-pill badge-light badge-outline">Slack</span>
+                        <span class="badge badge-pill badge-light badge-outline">SAP (iPower)</span>
+                        <span class="badge badge-pill badge-light badge-outline">Oracle (Procurement)</span>
+                        <span class="badge badge-pill badge-light badge-outline">Procreate</span>
+                        <span class="badge badge-pill badge-light badge-outline">Trello</span>
+
+                    </article>
+                </section>
+
+                <!-- Education -->
+                <section class="avoid-page-break">
                     <h1>Education</h1>
                     <article class="experience education">
                         <h1>MBA - Business Administration</h1>
                         <h2 class="company">Newport International University</h2>
                         <div class="row details">
                             <div class="col-6">
-                                <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"
-                                    stroke-linecap="round" stroke-linejoin="round" class="feather feather-calendar">
+                                <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24"
+                                    fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"
+                                    stroke-linejoin="round" class="feather feather-calendar">
                                     <rect x="3" y="4" width="18" height="18" rx="2" ry="2"></rect>
                                     <line x1="16" y1="2" x2="16" y2="6"></line>
                                     <line x1="8" y1="2" x2="8" y2="6"></line>
@@ -901,11 +971,12 @@
                                 </svg> 2010 - 2012
                             </div>
                             <div class="col-6">
-                                <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"
-                                    stroke-linecap="round" stroke-linejoin="round" class="feather feather-map-pin">
+                                <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24"
+                                    fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"
+                                    stroke-linejoin="round" class="feather feather-map-pin">
                                     <path d="M21 10c0 7-9 13-9 13s-9-6-9-13a9 9 0 0 1 18 0z"></path>
                                     <circle cx="12" cy="10" r="3"></circle>
-                                </svg> USA
+                                </svg> Seattle, USA
                             </div>
 
                         </div>
@@ -917,8 +988,9 @@
                         <h2 class="company">City University of Seattle</h2>
                         <div class="row details">
                             <div class="col-6">
-                                <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"
-                                    stroke-linecap="round" stroke-linejoin="round" class="feather feather-calendar">
+                                <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24"
+                                    fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"
+                                    stroke-linejoin="round" class="feather feather-calendar">
                                     <rect x="3" y="4" width="18" height="18" rx="2" ry="2"></rect>
                                     <line x1="16" y1="2" x2="16" y2="6"></line>
                                     <line x1="8" y1="2" x2="8" y2="6"></line>
@@ -926,11 +998,12 @@
                                 </svg> 2006 - 2009
                             </div>
                             <div class="col-6">
-                                <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"
-                                    stroke-linecap="round" stroke-linejoin="round" class="feather feather-map-pin">
+                                <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24"
+                                    fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"
+                                    stroke-linejoin="round" class="feather feather-map-pin">
                                     <path d="M21 10c0 7-9 13-9 13s-9-6-9-13a9 9 0 0 1 18 0z"></path>
                                     <circle cx="12" cy="10" r="3"></circle>
-                                </svg> USA
+                                </svg> Seattle, USA
                             </div>
                         </div>
 
@@ -946,13 +1019,22 @@
                         <h2 class="company">RED Academy</h2>
                         <div class="row details">
                             <div class="col-6">
-                                <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"
-                                    stroke-linecap="round" stroke-linejoin="round" class="feather feather-calendar">
+                                <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24"
+                                    fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"
+                                    stroke-linejoin="round" class="feather feather-calendar">
                                     <rect x="3" y="4" width="18" height="18" rx="2" ry="2"></rect>
                                     <line x1="16" y1="2" x2="16" y2="6"></line>
                                     <line x1="8" y1="2" x2="8" y2="6"></line>
                                     <line x1="3" y1="10" x2="21" y2="10"></line>
                                 </svg> 2019
+                            </div>
+                            <div class="col-6">
+                                <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24"
+                                    fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"
+                                    stroke-linejoin="round" class="feather feather-map-pin">
+                                    <path d="M21 10c0 7-9 13-9 13s-9-6-9-13a9 9 0 0 1 18 0z"></path>
+                                    <circle cx="12" cy="10" r="3"></circle>
+                                </svg> London, UK
                             </div>
                         </div>
 
@@ -964,54 +1046,57 @@
                         <h2 class="company">Greenwich Community College</h2>
                         <div class="row details">
                             <div class="col-6">
-                                <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"
-                                    stroke-linecap="round" stroke-linejoin="round" class="feather feather-calendar">
+                                <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24"
+                                    fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"
+                                    stroke-linejoin="round" class="feather feather-calendar">
                                     <rect x="3" y="4" width="18" height="18" rx="2" ry="2"></rect>
                                     <line x1="16" y1="2" x2="16" y2="6"></line>
                                     <line x1="8" y1="2" x2="8" y2="6"></line>
                                     <line x1="3" y1="10" x2="21" y2="10"></line>
                                 </svg> 2013
                             </div>
-
-                        </div>
-
-                    </article>
-
-                    <article class="experience">
-                        <h1>Academic ESL Completion Certificate</h1>
-                        <h2 class="company">City University of Seattle</h2>
-                        <div class="row details">
                             <div class="col-6">
-                                <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"
-                                    stroke-linecap="round" stroke-linejoin="round" class="feather feather-calendar">
-                                    <rect x="3" y="4" width="18" height="18" rx="2" ry="2"></rect>
-                                    <line x1="16" y1="2" x2="16" y2="6"></line>
-                                    <line x1="8" y1="2" x2="8" y2="6"></line>
-                                    <line x1="3" y1="10" x2="21" y2="10"></line>
-                                </svg> 2005
+                                <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24"
+                                    fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"
+                                    stroke-linejoin="round" class="feather feather-map-pin">
+                                    <path d="M21 10c0 7-9 13-9 13s-9-6-9-13a9 9 0 0 1 18 0z"></path>
+                                    <circle cx="12" cy="10" r="3"></circle>
+                                </svg> London, UK
                             </div>
+
                         </div>
 
-
                     </article>
+
                     <article class="experience">
                         <h1>Cambridge First Certificate in English</h1>
                         <h2 class="company">Wiltshire College</h2>
                         <div class="row details">
                             <div class="col-6">
-                                <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"
-                                    stroke-linecap="round" stroke-linejoin="round" class="feather feather-calendar">
+                                <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24"
+                                    fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"
+                                    stroke-linejoin="round" class="feather feather-calendar">
                                     <rect x="3" y="4" width="18" height="18" rx="2" ry="2"></rect>
                                     <line x1="16" y1="2" x2="16" y2="6"></line>
                                     <line x1="8" y1="2" x2="8" y2="6"></line>
                                     <line x1="3" y1="10" x2="21" y2="10"></line>
                                 </svg> 2004-2005
                             </div>
+                            <div class="col-6">
+                                <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24"
+                                    fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"
+                                    stroke-linejoin="round" class="feather feather-map-pin">
+                                    <path d="M21 10c0 7-9 13-9 13s-9-6-9-13a9 9 0 0 1 18 0z"></path>
+                                    <circle cx="12" cy="10" r="3"></circle>
+                                </svg> Wiltshire, UK
+                            </div>
                         </div>
 
 
                     </article>
                 </section>
+
+                
 
                 <!-- Languages -->
                 <section>
@@ -1082,28 +1167,7 @@
                     </article>
                 </section>
 
-                <!-- Technologies -->
-                <section>
-                    <h1>Technologies</h1>
-                    <article class="tech">
 
-                        
-                        <span class="badge badge-pill badge-light badge-outline">Sketch</span>
-                        <span class="badge badge-pill badge-light badge-outline">InVision</span>
-                        <span class="badge badge-pill badge-light badge-outline">Adobe Xd</span>
-                        <span class="badge badge-pill badge-light badge-outline">Marvel</span>
-                        <span class="badge badge-pill badge-light badge-outline">HTML5</span>
-                        <span class="badge badge-pill badge-light badge-outline">CSS</span>
-                        <span class="badge badge-pill badge-light badge-outline">MS Project</span>
-                        <span class="badge badge-pill badge-light badge-outline">PlanView</span>
-                        <span class="badge badge-pill badge-light badge-outline">Sharepoint</span>
-                        <span class="badge badge-pill badge-light badge-outline">MS Office</span>
-                        <span class="badge badge-pill badge-light badge-outline">SAP (iPower)</span>
-                        <span class="badge badge-pill badge-light badge-outline">Oracle (Procurement)</span>
-                        <span class="badge badge-pill badge-light badge-outline">Procreate</span>
-
-                    </article>
-                </section>
 
                 <!-- Passions -->
                 <section>
@@ -1112,8 +1176,9 @@
                     <article class="accomplishment">
                         <div class="row">
                             <div class="col-1">
-                                <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"
-                                    stroke-linecap="round" stroke-linejoin="round" class="feather feather-edit-3">
+                                <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24"
+                                    fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"
+                                    stroke-linejoin="round" class="feather feather-edit-3">
                                     <polygon points="14 2 18 6 7 17 3 17 3 13 14 2"></polygon>
                                     <line x1="3" y1="22" x2="21" y2="22"></line>
                                 </svg>
@@ -1128,15 +1193,18 @@
                     <article class="accomplishment">
                         <div class="row">
                             <div class="col-1">
-                                <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"
-                                    stroke-linecap="round" stroke-linejoin="round" class="feather feather-globe">
+                                <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24"
+                                    fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"
+                                    stroke-linejoin="round" class="feather feather-globe">
                                     <circle cx="12" cy="12" r="10"></circle>
                                     <line x1="2" y1="12" x2="22" y2="12"></line>
-                                    <path d="M12 2a15.3 15.3 0 0 1 4 10 15.3 15.3 0 0 1-4 10 15.3 15.3 0 0 1-4-10 15.3 15.3 0 0 1 4-10z"></path>
+                                    <path
+                                        d="M12 2a15.3 15.3 0 0 1 4 10 15.3 15.3 0 0 1-4 10 15.3 15.3 0 0 1-4-10 15.3 15.3 0 0 1 4-10z">
+                                    </path>
                                 </svg>
                             </div>
                             <div class="col-11">
-                                <h3>Travelling and exploring new cultures with family &amp; friends
+                                <h3>Travelling and exploring new cultures with family &amp; friends.
                                 </h3>
                             </div>
                         </div>
@@ -1146,15 +1214,16 @@
                     <article class="accomplishment">
                         <div class="row">
                             <div class="col-1">
-                                <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"
-                                    stroke-linecap="round" stroke-linejoin="round" class="feather feather-book-open">
+                                <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24"
+                                    fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"
+                                    stroke-linejoin="round" class="feather feather-book-open">
                                     <path d="M2 3h6a4 4 0 0 1 4 4v14a3 3 0 0 0-3-3H2z"></path>
                                     <path d="M22 3h-6a4 4 0 0 0-4 4v14a3 3 0 0 1 3-3h7z"></path>
                                 </svg>
                             </div>
                             <div class="col-11">
                                 <h3>Reading detective and fantasy fiction as well as journals about start ups and
-                                        enterpreneurs and digital media about UX and UI designs & solutions.
+                                    enterpreneurs and digital media about UX and UI designs & solutions.
                                 </h3>
                             </div>
                         </div>
@@ -1164,8 +1233,9 @@
                     <article class="accomplishment">
                         <div class="row">
                             <div class="col-1">
-                                <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"
-                                    stroke-linecap="round" stroke-linejoin="round" class="feather feather-activity">
+                                <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24"
+                                    fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"
+                                    stroke-linejoin="round" class="feather feather-activity">
                                     <polyline points="22 12 18 12 15 21 9 3 6 12 2 12"></polyline>
                                 </svg>
                             </div>

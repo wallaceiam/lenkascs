@@ -1,8 +1,8 @@
 {
     "devDependencies": {
-        "express": "^4.16.3",
-        "morgan": "^1.9.0",
-        "reload": "^2.3.1",
+        "express": "^4.16.4",
+        "morgan": "^1.9.1",
+        "reload": "^3.0.0",
         "watch": "^1.0.2"
     }
 }
